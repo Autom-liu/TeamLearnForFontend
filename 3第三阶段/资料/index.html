@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<!-- 这是文档开头必须的标签，用于让浏览器识别这是个html文件 -->
+<!-- html是根元素 -->
+<html lang="en">
+<!-- head是用于文档头部信息 -->
+<head>
+	<!-- 配置字符集为utf-8 -->
+	<meta charset="UTF-8">
+	<!-- 设置当前页面环境和移动端兼容 -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- 设置当前页面以低版本配置的IE浏览器显示 -->
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<!-- 设置页面标题 -->
+	<title>Document</title>
+</head>
+<!-- 网页主题内容都要放在body这里 -->
+<body>
+<!-- 样例，注意标签语义化的使用和class命名特征 -->
+<div class="wrapper">
+	<!-- 网页头部，应使用header标签 -->
+	<header>
+		<div class="logo-box">
+			<img src="./images/baike_logo.png" alt="" class="logo">
+		</div>
+		<div class="search-box">
+			<div class="input-box">
+				<!-- 这是属于表单标签，这个阶段暂时不涉及，有兴趣可以自行了解 -->
+				<input type="text" />
+			</div>
+			<div class="btn-box">
+				<button class="in">进入词条</button>
+				<button class="search">全站搜索</button>
+				<a href="https://baike.baidu.com/help" target="_blank">帮助</a>
+			</div>
+		</div>
+		<div class="advertise-box">
+			<img src="https://baikebcs.bdimg.com/adpic/reci_2018_11_150x75_fabu_2.png" alt="一张广告图" />
+		</div>
+	</header>
+	<!-- 导航区块 nav标签 -->
+	<nav>
+		<div class="nav-list">
+			<!-- 导航的列表通常 ul > li  -->
+			<ul>
+				<li class="nav-item">首页</li>
+				<li class="nav-item">分类</li>
+				<li class="nav-item">秒懂</li>
+				<li class="nav-item">特色</li>
+				<li class="nav-item">用户</li>
+				<li class="nav-item">权威</li>
+			</ul>
+		</div>
+		<div class="personal-zone">
+			<button class="btn">
+				<!-- i标签常用于做图标 -->
+				<i class="icon"></i>
+				<span>个人中心</span>
+			</button>
+		</div>
+	</nav>
+	<section class="main">
+		<div class="slider-container">
+			<div class="slider-wrapper">
+				<ul>
+					<!-- 轮播这块三个区块的结构相同 -->
+					<li class="slider">
+						<!-- 整体是可以点击的超链接，应使用a标签包裹 -->
+						<a href="https://baike.baidu.com/item/%E6%B2%88%E9%98%B3%E5%9C%B0%E9%93%81#hotspotmining">
+							<!-- 图文布局，<figure></figure> -->
+							<figure>
+									<div class="img-box">
+										<img src="https://gss2.bdstatic.com/9fo3dSag_xI4khGkpoWK1HF6hhy/baike/eWH%3D255%2C340/sign=f9b4ce81bf119313d52982bd570d39fb/d833c895d143ad4b7be446838f025aafa50f06ae.jpg" alt="">
+									</div>
+									<figcaption>
+										<h3 class="title">东北第一条地铁为何难产</h3>
+										<p class="desc">早在日本侵占东北时期，就已经对沈阳进行了详尽的地铁规划。但由于种种原因，直到21世纪初，第一条地铁才最终建成。</p>
+									</figcaption>
+								</figure>
+						</a>
+					</li>
+					<li class="slider">
+						<!-- 整体是可以点击的超链接，应使用a标签包裹 -->
+						<a href="https://baike.baidu.com/item/%E6%B2%88%E9%98%B3%E5%9C%B0%E9%93%81#hotspotmining">
+							<!-- 图文布局，<figure></figure> -->
+							<figure>
+									<div class="img-box">
+										<img src="https://gss2.bdstatic.com/9fo3dSag_xI4khGkpoWK1HF6hhy/baike/eWH%3D255%2C340/sign=f9b4ce81bf119313d52982bd570d39fb/d833c895d143ad4b7be446838f025aafa50f06ae.jpg" alt="">
+									</div>
+									<figcaption>
+										<h3 class="title">东北第一条地铁为何难产</h3>
+										<p class="desc">早在日本侵占东北时期，就已经对沈阳进行了详尽的地铁规划。但由于种种原因，直到21世纪初，第一条地铁才最终建成。</p>
+									</figcaption>
+								</figure>
+						</a>
+					</li>
+					<li class="slider">
+						<!-- 整体是可以点击的超链接，应使用a标签包裹 -->
+						<a href="https://baike.baidu.com/item/%E6%B2%88%E9%98%B3%E5%9C%B0%E9%93%81#hotspotmining">
+							<!-- 图文布局，<figure></figure> -->
+							<figure>
+									<div class="img-box">
+										<img src="https://gss2.bdstatic.com/9fo3dSag_xI4khGkpoWK1HF6hhy/baike/eWH%3D255%2C340/sign=f9b4ce81bf119313d52982bd570d39fb/d833c895d143ad4b7be446838f025aafa50f06ae.jpg" alt="">
+									</div>
+									<figcaption>
+										<h3 class="title">东北第一条地铁为何难产</h3>
+										<p class="desc">早在日本侵占东北时期，就已经对沈阳进行了详尽的地铁规划。但由于种种原因，直到21世纪初，第一条地铁才最终建成。</p>
+									</figcaption>
+								</figure>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- 这里采用的是结构命名，大多数时候是功能命名，实在想不出来就用结构命名法 -->
+		<div class="right-side">
+			<h2 class="title">百度百科</h2>
+			<p class="sub-title">让人类平等地认知世界</p>
+			<ul>
+				<li>
+					<i class="icon"></i>
+					<!-- 这个数字是被强调突显出来的 用em强调 -->
+					<span> <em> 15,815,555</em>个词条</span>
+				</li>
+				<li>
+					<i class="icon"></i>
+					<span> <em> 15,815,555</em>次编辑</span>
+				</li>
+				<li>
+						<i class="icon"></i>
+						<span> <em> 15,815,555</em>人编写</span>
+					</li>
+			</ul>
+			<div class="btn-box">
+				<button>创建词条</button>
+			</div>
+			<p class="help">
+				<i class="icon"></i>
+				<a href="https://baike.baidu.com/help/question">你在编辑过程中有疑问吗？</a>
+			</p>
+		</div>
+	</section>
+</div>
+
+</body>
+</html>
