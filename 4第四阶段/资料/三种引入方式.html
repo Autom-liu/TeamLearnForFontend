@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+	<!-- 外部文件引入 -->
+	<link rel="stylesheet" href="./style/outer.css">
+  <style>
+		/* style标签内部引入 */
+  	.test {
+  		width: 100px;
+  		height: 100px;
+  		background-color: #f8eb00;
+  	}
+  </style>
+</head>
+
+<body>
+	<!-- 标签内style引入 -->
+	<div style="width: 100px; height: 100px; background-color: blue;"></div>
+	<!-- 使用本文件的style标签内部引入 -->
+	<div class="test"></div>
+	<!-- 使用专门的外部css文件引入 -->
+	<div class="outer"></div>
+</body>
+</html>
